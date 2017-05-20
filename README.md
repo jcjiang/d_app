@@ -10,7 +10,8 @@ I also wrote JS in Qualtrics to hack the system and implement a reward system th
 
 The following is a Twine passage that is displayed/executed when the passage is tagged with a certain keyword, the following inserts the name of the passage into a datamap in order with certain modifications depending on if it was visited in the past.
 
-`<tw-passagedata pid="139" name="putLocation" tags="" position="16,135">{
+```
+<tw-passagedata pid="139" name="putLocation" tags="" position="16,135">{
 (set: $oldKey to &quot;a&quot; + (text: $keyL - 1))
 
 (if: (passage:)&#39;s tags contains &quot;recordlocation&quot;)[(set: $valueL to (passage:)&#39;s name)](else: )[]
@@ -24,7 +25,8 @@ The following is a Twine passage that is displayed/executed when the passage is 
 
 (set: $keyL to it + 1)
 (set: $valueL to &quot;&quot;)
-]}`
+]}
+```
 
 ### CS50 Work
 
@@ -32,7 +34,8 @@ At the end of CS50, two other students and I worked on a program that would retu
 
 The following was our left-hand rule method, in which we solved the maze by eventually making every avatar turn left until they found each other.  This contains a possible infinite loop that I fixed in a later commit.
 
-`//check coordinates if they are the same
+```
+//check coordinates if they are the same
             if (otherX == myX && otherY == myY) {
               printf("Other Avatar %d is at the same location (%d, %d) as me, Avatar %d!\n", currID, otherX, otherY, avatar->id);
               goalAvatarId = currID;
@@ -53,6 +56,7 @@ The following was our left-hand rule method, in which we solved the maze by even
           // check if the last move from the avatar's last turn worked
           int direction = calculateDirection(avatar->previousMoveDirection, avatar->previousMoveSuccess);
           avatarMove(avatar, direction);
-        }`
+        }
+  ```
 
 
