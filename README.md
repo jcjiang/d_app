@@ -8,6 +8,19 @@ I worked on a game for a research study regarding rejection bias over the past t
 
 I also wrote JS in Qualtrics to hack the system and implement a reward system that shows certain animations depending on how many previous quizzes were taken, and reward raffle tickets as a bonus to people who complete several quizzes in a roll.  
 
+
+
 ### CS50 Work
 
 At the end of CS50, two other students and I worked on a program that would return and receive commands from a server through threading to solve a maze.  Here are some excerpts of code I wrote for the project.
+
+             `if (currID == 0 || avatar->id == 0) {
+                solvedCoordinates[currID] = 1;
+                solvedCoordinates[avatar->id] = 1;
+                 #ifdef DEBUG
+                  printf("Other Avatar %d is at the same location (%d, %d) as me, Avatar %d!\n", currID, otherX, otherY,      avatar->id);
+                 #endif
+                goalAvatarId = currID;
+                noMove = true;
+              }`
+
